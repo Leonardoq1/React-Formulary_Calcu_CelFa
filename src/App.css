@@ -67,7 +67,7 @@ box-shadow: -1px 0px 18px 0px rgba(0,204,255,1);
 
 
 .fondo {
-  background-image: url('./public/fondo.jpg');
+  background-image: url('../public/fondo.jpg');
   height: 80rem;
   background-repeat: no-repeat;
   background-size: cover;
