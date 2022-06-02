@@ -1,0 +1,235 @@
+/* Globales */
+html{
+  font-size: 62.5%; /*Se declara esto para que se pueda usar los rem (equelibrarlos)  incluir en tus proyectos  de css*/ 
+  box-sizing: border-box; /*hack para box-model*/
+  scroll-snap-type: y mandatory;
+}
+/*Soluciona todos los problemas de box-sizing (Tamaño de caja)*/
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
+/* Utilidades */
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+
+.sombra{
+  -webkit-box-shadow: 0px 1px 13px -3px rgba(0,0,0,0.72);
+  -moz-box-shadow: 0px 1px 13px -3px rgba(0,0,0,0.72);
+  box-shadow: 0px 1px 13px -3px rgba(0,0,0,0.72);
+}
+.borde-green {
+  -webkit-box-shadow: -1px 0px 18px 0px rgba(0,255,9,1);
+  -moz-box-shadow: -1px 0px 18px 0px rgba(0,255,9,1);
+  box-shadow: -1px 0px 18px 0px rgba(0,255,9,1);
+}
+.borde-blue {
+  -webkit-box-shadow: -1px 0px 18px 0px rgba(0,204,255,1);
+-moz-box-shadow: -1px 0px 18px 0px rgba(0,204,255,1);
+box-shadow: -1px 0px 18px 0px rgba(0,204,255,1);
+
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  
+}
+
+.centerText{
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.marginTop {
+  margin-top: 2rem;
+}
+
+.neon {
+	color: #fff;
+	text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+}
+
+
+.fondo {
+  background-image: url('./public/fondo.jpg');
+  height: 80rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+/*calculadora*/
+
+.bg{
+  background-color: rgb(22, 20, 20);
+  border-radius: 1rem;
+  padding-bottom: 2rem;
+}
+
+.sumaMul {
+  margin-top: 2rem;
+  
+}
+
+.contenido__text{
+  font-weight: bold;
+	text-align: center;
+  font-size: 2rem;
+	text-transform: uppercase;
+  margin: 2rem 0 2rem 0;
+  padding-top: 2rem;
+}
+
+
+.bold-tamaño{
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.result {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+
+.result-color {
+  color: greenyellow;
+}
+
+/* formulario */
+
+.formulario {
+  background-color: gainsboro;
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+
+
+.formulario fieldset {
+  border: none;
+
+}
+
+
+
+.formulario legend{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0 auto 1rem auto ;
+ 
+  color: rgb(35, 72, 77);
+
+}
+
+@media (min-width: 768px) {
+  .contenido-formula {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      column-gap: 1rem;
+  }
+} 
+
+.formula {
+  margin-bottom: 1rem;
+
+}
+
+.formula label {
+  color: rgb(22, 21, 21);
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+  display: block;
+
+}
+
+.input-text {
+  font-size: 1.5rem;
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.formula textarea {
+  height: 10rem;
+}
+
+/* Boton enviar */
+.boton {
+  background-color: rgb(114, 209, 177);
+  color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .8rem;
+  text-align: center;
+
+}
+
+.boton:hover{
+  cursor: pointer;
+
+}
+
+.input-boton {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .flex-boton {
+      display: flex;
+      justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .boton{
+      width: auto;
+     
+  }
+  
+}
+
+
+/* test grid */
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+
+
+
+
+
+
