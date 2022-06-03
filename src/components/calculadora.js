@@ -36,8 +36,8 @@ export default function SumaResta() {
         <div className='sumaMul '>
 
             <div className='contenido'>
-                <h2 className='contenido__text neon'>Escriba dos números para sumar o multiplicar</h2>
-                <div className='center marginTop borde-green'>
+                <h2 className='margen-none contenido__text neon'> Escriba dos números para sumar o multiplicar</h2>
+                <div className='center_input marginTop borde-green'>
                     <input className='bold-tamaño'
                      onChange={handleInput}
                     name="num1"
@@ -53,7 +53,7 @@ export default function SumaResta() {
                 </div>
             </div>
             <h3 className='centerText centerText'>Opciones</h3>
-            <div className='center'>
+            <div className='center_div'>
                 <button onClick={suma}>sumar</button>
                 <button onClick={multi}>multiplicar</button>
             </div>

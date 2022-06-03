@@ -1,4 +1,5 @@
 /* Globales */
+/* @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap"); */
 html{
   font-size: 62.5%; /*Se declara esto para que se pueda usar los rem (equelibrarlos)  incluir en tus proyectos  de css*/ 
   box-sizing: border-box; /*hack para box-model*/
@@ -32,14 +33,30 @@ html{
 box-shadow: -1px 0px 18px 0px rgba(0,204,255,1);
 
 }
+.margen-none{
+  margin-top: 0;
+}
 
-
-.center {
+.center_div {
   display: flex;
   justify-content: center;
-  justify-items: center;
-  
 }
+
+.center_input {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .center {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    
+  }
+}
+
 
 .centerText{
   text-align: center;
@@ -66,13 +83,99 @@ box-shadow: -1px 0px 18px 0px rgba(0,204,255,1);
 }
 
 
-.fondo {
-  background-image: url('../public/fondo.jpg');
-  height: 80rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  
+
+/* telefonos */
+@media (min-width: 350px) {
+  .fondo {
+    background-image: url('../public/fondo.jpg');
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 1rem;
+  } 
+}
+ 
+/* IPAD */
+@media (min-width: 768px) {
+  .fondo {
+    background-image: url('../public/fondo.jpg');
+    height: 102.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+/* Monitores */
+@media (min-width: 1280px) {
+  .fondo {
+    background-image: url('../public/fondo.jpg');
+    height: 94.9rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.titulo{
+  text-align: center;
+  color: #fff;
+  margin: 0%;
+  font-size: 3rem;
+  line-height: 6rem;
+  background-color: #111;
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 3s infinite;
+  -webkit-animation: blink 5s infinite;
+}
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
 }
 
 /*calculadora*/
@@ -93,8 +196,8 @@ box-shadow: -1px 0px 18px 0px rgba(0,204,255,1);
 	text-align: center;
   font-size: 2rem;
 	text-transform: uppercase;
-  margin: 2rem 0 2rem 0;
-  padding-top: 2rem;
+  padding: 2rem 0 2rem 0;
+  margin:0;
 }
 
 
@@ -152,6 +255,7 @@ box-shadow: -1px 0px 18px 0px rgba(0,204,255,1);
       column-gap: 1rem;
   }
 } 
+
 
 .formula {
   margin-bottom: 1rem;
@@ -219,17 +323,10 @@ box-shadow: -1px 0px 18px 0px rgba(0,204,255,1);
 
 
 /* test grid */
-
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+  }
 }
-
-
-
-
-
-
-

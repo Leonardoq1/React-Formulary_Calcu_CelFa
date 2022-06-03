@@ -56,7 +56,7 @@ class Formulario extends React.Component {
               <textarea class="input-text"></textarea>
             </div>
             <div class="flex-boton">
-              <input class="boton input-boton" type="submit" value="Enviar" />
+              <input class="boton input-boton" type="button" value="Enviar" />
             </div>
           </fieldset>
         </form>
